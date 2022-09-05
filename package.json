@@ -34,6 +34,7 @@
   "scripts": {
     "start": "cross-env REACT_APP_IN_GAME=1 webpack-cli serve",
     "build": "cross-env REACT_APP_IN_GAME=1 webpack --mode=production",
+    "build:release": "yarn build && yarn build:game", 
     "dev": "cross-env REACT_APP_IN_GAME=0 webpack-dev-server --mode=development",
     "serve": "serve dist -p 3002",
     "clean": "rm -rf dist",
