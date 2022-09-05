@@ -31,8 +31,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies & Build
-        run: yarn --frozen-lockfile && yarn build && yarn build:game
-
+        run: yarn --frozen-lockfile && yarn build:release
+        
       - name: Bundle
         run: |
           mkdir -p ./temp/npwd_crypto
